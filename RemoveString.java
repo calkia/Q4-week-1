@@ -15,13 +15,12 @@ public class RemoveString {
         sentence = input.nextLine();
         System.out.print("Enter a string: ");
         remove = input.next();
-        //do{
+        do{
             index = sentence.indexOf(remove);
             if (index != -1){
-                sentence.replace(remove, "");
+                sentence = sentence.replace(remove, "");
             }
-        //}while (index != -1);
+        }while (index != -1);
         System.out.println(sentence);
-        System.out.println(index);
     }
 }
